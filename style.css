@@ -1,0 +1,85 @@
+body {
+  font-family: "Arial Arabic Bold", Arial, sans-serif;
+}
+
+.masthead {
+  background-size: cover;
+  min-height: 80vh;
+  position: relative;
+  color: aliceblue;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.hover-green {
+  font-size: large;
+  font-weight: 550;
+}
+
+.hover-green:hover {
+  color: green;
+}
+
+h1 {
+}
+
+h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: rgb(135, 212, 19);
+}
+
+h3 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.color-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+form {
+  width: 100%;
+  max-width: 500px;
+}
+
+.navbar {
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for color change */
+  background-color: transparent; /* Initial background color */
+  color: white; /* Initial text color */
+}
+
+.navbar.navbar-scrolled {
+  background-color: #ffffff;
+  color: green; /* Text color when navbar is scrolled */
+}
+
+/* Adjust nav-title styles */
+.nav-title {
+  transition: color 0.3s; /* Smooth transition for color change */
+  color: white; /* Initial text color */
+}
+
+/* Apply different color when navbar is scrolled */
+.navbar-scrolled .nav-title {
+  color: black; /* Text color remains black when navbar is scrolled */
+}
+
+@media (max-width: 768px) {
+  .masthead {
+    min-height: 80vh;
+  }
+  h1 {
+    display: none;
+  }
+
+  h3 {
+    font-size: calc(1.525rem + 3.3vw);
+  }
+
+  .award-image {
+    display: none;
+  }
+}
